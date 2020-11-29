@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destory]
     resources :post_comments, only: [:create, :destroy]
   end
+  resources :users, only: [:show, :edit, :update]
 end
